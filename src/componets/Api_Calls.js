@@ -2,7 +2,11 @@ import React from 'react';
 import axios from 'axios';
 
 const baseUrl = `http://178.62.198.162/api`;
-const token = process.env.REACT_APP_TOKEN_ENV;
+
+// Please add your token in .env file
+
+const token = process.env.REACT_APP_TOKEN_ENV; 
+
 const headers = {
     'Content-Type': 'application/json',
     'token': `${token}`,
