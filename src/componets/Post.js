@@ -70,6 +70,7 @@ class PostBlogs extends React.Component {
             <TextField
               id="Berichtnaam"
               name="postname"
+              required
               placeholder="Placeholder"
               fullWidth
               variant="filled"
@@ -81,8 +82,9 @@ class PostBlogs extends React.Component {
             <TextField
               id="selectcat"
               name="selectcat"
+              required
               select
-              label="Geen categorie"
+              placeholder ="Geen categorie"
               value={valueSelect}
               onChange={event => this.onhandleSelect(event.target.value)}
               fullWidth
@@ -102,6 +104,7 @@ class PostBlogs extends React.Component {
             <TextField
               id="postcontent"
               name="postcontent"
+              required
               multiline
               rows="25"
               fullWidth
